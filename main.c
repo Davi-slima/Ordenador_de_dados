@@ -147,6 +147,7 @@ int main(){
 	while ((choice != 1) && (choice != 2)) {
 		printf("\nOpção inválida. Tente novamente\n");
 		printf("Insira uma opção válida: ");
+		choice = getchar();
 		scanf("%d", &choice);
 	}
 	
@@ -164,6 +165,7 @@ int main(){
 		
 		while ((archive <= 0) || (archive > 6)) {
 	 		printf("Arquivo inválido\nPor favor insira um código que seja válido: ");
+	 		archive = getchar();
 	 		scanf("%d", &archive);
 		}
 	}
@@ -264,6 +266,7 @@ int main(){
 		while ((manual_choice != 1) && (manual_choice != 2)) {
 			printf("\nOpção inválida. Tente novamente\n");
 			printf("Insira uma opção válida: ");
+			manual_choice = getchar();
 			scanf("%d", &manual_choice);
 		}
 	}
@@ -282,6 +285,7 @@ int main(){
 		while((manual_choice_2 <= 0)|| manual_choice_2 > MAX){
 			printf("\n Opção Invalida \n");
 			printf(" Digite novamente a opção: \n");
+			manual_choice_2 = getchar();
 			scanf("%d", &manual_choice_2);	
 		}
 	}
